@@ -1,82 +1,59 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.classe-1 {
+    position: relative; /* Necessário para o posicionamento absoluto da imagem */
+    display: flex;
+    flex-direction: column; /* Coloca o h1 e o p em coluna */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
 }
 
-.h1, h2 {
-    text-align: center;
+#imagem-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#imagem-1 img {
+    width: 50px; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+h1 {
+    margin: 0; /* Remove a margem padrão do h1 */
+}
+
+#loja {
+    margin-top: 5px;
+    color: green;
+}
+
+#borda{
+    border: 1px solid gray;
+  margin-bottom: 5px; 
 }
 
 .container {
-    width: 800px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    height: 50px;
-}
-
-.page-number {
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-}
-
-.evidence {
+    width: 80%; /* Ajuste a largura conforme necessário */
+    margin: 20px auto; /* Centraliza o conteúdo */
+    text-align: center; /* Centraliza o título */
+  }
+  
+  .imagens {
+    display: flex; /* Alinha os quadros lado a lado */
+    justify-content: center; /* Centraliza os quadros horizontalmente */
     margin-top: 20px;
-}
-
-.image-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.image {
-    width: 350px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-}
-
-.image img {
-    max-width: 100%;
-    height: auto;
-}
-
-.info {
-    margin-top: 20px;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.info-item {
-    display: flex;
-    justify-content: space-between;
-}
-
-.map {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.map img {
-    max-width: 100%;
-    height: auto;
-}
-
-footer {
-    margin-top: 20px;
-    text-align: center;
-}
+  }
+  
+  .imagem-container {
+    margin: 0 10px; /* Adiciona espaçamento entre os quadros */
+  }
+  
+  .imagem {
+    width: 200px; /* Ajuste a largura da imagem */
+    height: 150px; /* Ajuste a altura da imagem */
+    border: 1px solid #ccc; /* Borda da imagem */
+    background-color: #f0f0f0; /* Cor de fundo da imagem (cinza claro) */
+  }
+  
+  .legenda {
+    margin-top: 5px;
+    font-size: 14px;
+  }
